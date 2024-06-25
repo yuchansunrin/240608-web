@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>호빈이 병신이였음? - 좌호빈 마이너 갤러리</title>
+    <meta name="title" content="호빈이 병신이였음? - 좌호빈 마이너 갤러리">
+    <meta name="description" content="엄">
+    <meta name="keywords" content="만화/애니, 좌호빈, 우파호빈, 호빈방방, MC호빈팬클럽, 빨녀, dc, 디시, gall, gallery, 갤러리, 커뮤니티">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://hobin.ychan.me/">
+    <meta name="twitter:title" content="호빈이 병신이였음? - 좌호빈 마이너 갤러리">
+    <meta name="twitter:description" content="엄">
+    <meta name="twitter:image" content="https://hobin.ychan.me/images/funhobin.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hobin.ychan.me/">
+    <meta property="og:title" content="호빈이 병신이였음? - 좌호빈 마이너 갤러리">
+    <meta property="og:description" content="엄">
+    <meta property="og:image" content="https://hobin.ychan.me/images/funhobin.jpg">
+    <link rel="shortcut icon" href="//nstatic.dcinside.com/dc/w/images/logo_icon.ico">
+    <link rel="apple-touch-icon" href="//nstatic.dcinside.com/dc/m/img/dcinside_icon.png">
+
+</head>
+<body>
+<div id="hobintainer">
+    <h1 class="rainbow">좌호빈병신</h1>
+    <img src="./images/funhobin.jpg" alt="funhobin" width="300px">
+</div>
+<style>
+    #hobintainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+    .rainbow {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 32px;
+        letter-spacing: 5px;
+        background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: rainbow_animation 6s ease-in-out infinite,  pulse 2s infinite;
+        background-size: 400% 100%;
+    }
+
+    @keyframes rainbow_animation {
+        0%,100% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 100% 0;
+        }
+    }
+
+    #hobintainer img {
+        left: -100px;
+        animation: flyIn 2s forwards, spin 5s linear infinite;
+    }
+
+    h1 {
+        animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+        0% { transform: scale(2); }
+        50% { transform: scale(5.1); }
+        100% { transform: scale(2); }
+    }
+
+    @keyframes hobin {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.1); }
+        100% { transform: scale(1); }
+    }
+
+    @keyframes flyIn {
+        0% {
+            left: -100px;
+            transform: rotate(0deg);
+        }
+        100% {
+            left: 0;
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin{
+        100% { transform: rotate(-360deg); }
+    }
+</style>
+
+<script>
+    !function() {
+        function detectDevTool(allow) {
+            if(isNaN(+allow)) allow = 100;
+            var start = +new Date();
+            debugger;
+            var end = +new Date();
+            if(isNaN(start) || isNaN(end) || end - start > allow) {
+                alert('왜 훔쳐보세요?? 좌호빈임?')
+                document.write('<h1>놀라운사실: 좌호빈은 병신이 맞다</h1>');
+                console.log("%c좌호빈병신", "color: red; font-size: 20px; background-color: yellow;");
+            }
+        }
+        if(window.attachEvent) {
+            if (document.readyState === "complete" || document.readyState === "interactive") {
+                detectDevTool();
+                window.attachEvent('onresize', detectDevTool);
+                window.attachEvent('onmousemove', detectDevTool);
+                window.attachEvent('onfocus', detectDevTool);
+                window.attachEvent('onblur', detectDevTool);
+            } else {
+                setTimeout(argument.callee, 0);
+            }
+        } else {
+            window.addEventListener('load', detectDevTool);
+            window.addEventListener('resize', detectDevTool);
+            window.addEventListener('mousemove', detectDevTool);
+            window.addEventListener('focus', detectDevTool);
+            window.addEventListener('blur', detectDevTool);
+        }
+    }();
+</script>
+</body>
+</html>
